@@ -1,4 +1,4 @@
-import {planets, moons} from "./constants";
+import { moons } from './constants';
 
 export const getMoonsByPlanetMap = () => {
   return moons.reduce((map, moon) => {

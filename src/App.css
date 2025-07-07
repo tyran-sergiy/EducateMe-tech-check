@@ -2,6 +2,7 @@
 
 
 .planet {
+  font-weight: bold;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -12,9 +13,9 @@
   justify-content: center;
 }
 .moon {
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
+  font-weight: 500;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   background: #4a0180;
   color: white;
@@ -22,4 +23,17 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.moon:not(:first-child) {
+  margin-left: 50px;
+}
+.moon.selected {
+  background: #d2681c;
+}
+
+.orbit {
+  padding: 6px;
+  border-radius: 50%;
+  border: 3px solid #d2681c;
 }
